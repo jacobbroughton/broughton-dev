@@ -1,0 +1,100 @@
+.home {
+  height: calc(100% - 195px);
+  .main {
+    max-width: 1350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 38px 40px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    .homeText {
+      min-height: calc(100vh - 260px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      margin-bottom: 115px;
+      h1 {
+        font-size: 3.625rem; // 58px
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 1.5rem; // 24px
+        margin-bottom: 30px;
+      }
+      .buttons {
+        color: #6d6d84;
+        font-weight: 600;
+        .homeCTA {
+          padding: 10px;
+          color: #fff;
+          font-weight: 600;
+          background-color: #0570ec;
+          border: none;
+          cursor: pointer;
+          border-radius: 3px;
+          transition: all 0.15s ease;
+          margin-right: 10px;
+        }
+      }
+    }
+    .designQuote {
+      height: 350px;
+      .designQuoteText {
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 2.5rem;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .processMenuSection {
+      max-width: 1350px;
+      margin: 0 auto;
+      .processMenu {
+        display: flex;
+        align-items: center;
+        .picture {
+          height: 500px;
+          width: 500px;
+          background-color: #eef2f8;
+        }
+        .processList {
+          max-width: 500px;
+          margin-left: 30px;
+
+
+
+          .processBodyContainer{
+            transition: height .15s ease;
+          }
+
+          .open{
+            height: 100px;
+            // background-color: blue;
+            visibility: visible;
+          }
+
+          .closed{
+            // background-color: black;
+            visibility: hidden;
+            height: 0;
+          }
+
+          .processListItem:nth-child(6) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
