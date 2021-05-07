@@ -4,7 +4,8 @@
 }
 
 html, body{
-  height: 100%;
+ height: 100%;
+  /* min-height: 100%;  */
 }
 
 html{
@@ -18,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f2f6fe;
 }
 
 #root{

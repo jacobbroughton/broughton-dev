@@ -1,0 +1,28 @@
+$deep-shadow: 0 5px 33px 0 #0809383d;
+
+.cta-button {
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #0570ec;
+    box-shadow: $deep-shadow;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+  }
+
+  .cta-button:hover{
+    background:#044ec3;
+    box-shadow: none;
+    transform: translateY(2px);
+  }
+
+  .cta-banner {
+    background-color: #fff;
+    color: #181818;
+
+    &:hover{
+      background:#fff;
+    }
+  }

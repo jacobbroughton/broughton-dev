@@ -1,23 +1,21 @@
 import { useState, useEffect } from "react"
-import AccordianItem from "../AccordionItem/AccordionItem"
+import "./Accordion.scss"
+import AccordianItem from "./AccordionItem/AccordionItem"
 
-const Accordion = ({ items }) => {
+const Accordion = ({ items, process, setProcessPictureIndex }) => {
     const [selectedIndex, setSelectedIndex] = useState(null);
 
-    useEffect(() => {
-        console.log(selectedIndex)
-    }, [selectedIndex])
-
     const handleClick = ( clickedIndex ) => {
+        process && setProcessPictureIndex(clickedIndex)
         let selected = selectedIndex === clickedIndex ? null : clickedIndex
         setSelectedIndex(selected)
     }
+
+
     
     const renderedItems = items.map((item, index) => {
-        const showBody = index === selectedIndex ? "show-body" : ""
         return (
             <AccordianItem 
-                // showBody={showBody}
                 activeMode={selectedIndex === index}
                 item={item} 
                 index={index}
@@ -27,9 +25,7 @@ const Accordion = ({ items }) => {
     })
 
     return (
-        <div className="accordion">
-            <ul className="accordion-list">{renderedItems}</ul>
-        </div>
+        <ul className="accordion-list">{renderedItems}</ul>
     )
 }
 
