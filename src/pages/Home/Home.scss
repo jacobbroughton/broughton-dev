@@ -1,6 +1,7 @@
 // $deep-shadow: 4px 0 6px 0 #627d9833, 1px 0 4px 0 #00000014;
 $deep-shadow: 0 9px 33px 0 #0809383d;
 $light-shadow: 4px 0 6px 0 #627d9833;
+$gradient: linear-gradient(136deg, #616BFF 0%, #29C3F6 85%);
 .home {
   padding-top: 111px;
   height: calc(100% - 195px);
@@ -52,7 +53,7 @@ $light-shadow: 4px 0 6px 0 #627d9833;
         height: 100vh;
         margin-top: -111px;
         width: 500px;
-        background-image: linear-gradient(136deg, #616BFF 0%, #29C3F6 85%);
+        background-image: $gradient;
         display: flex;
         align-items: center;
         position: relative;

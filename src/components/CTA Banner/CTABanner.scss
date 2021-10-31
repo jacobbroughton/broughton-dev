@@ -1,6 +1,9 @@
+$gradient: linear-gradient(136deg, #616BFF 0%, #29C3F6 85%);
+
 .CTA-banner {
   padding: 120px 50px;
-  background: #0570ec;
+  // background: #0570ec;
+  background-image: $gradient;
   .CTA-banner-container {
     margin: 0 auto;
     // max-width: 550px;
